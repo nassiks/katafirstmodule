@@ -2,53 +2,137 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 <header class="header">
-    <button class="header__menu-burger"></button>
-    <div class="header__logo">
-        <img src="assets/img/logo.svg" alt="logo" class="header__logo-image">
-    </div>
-    <div class="header__menu">
-        <button class="menu__repair"></button>
-        <button class="menu__search"></button>
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__menu-button button">
+                <button class="header__menu-btn">
+                    <img class="header__icon" src="assets/img/icons/burger.svg" alt="repair">
+                </button>
+            </div>
+            <div class="logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="/assets/img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="menu header__menu-all">
+                <div class="header__menu-all menu__hidden">
+                    <div class="header__menu-button button">
+                        <button class="header__menu-btn">
+                            <img class="header__icon" src="assets/img/icons/call.svg" alt="repair">
+                        </button>
+                    </div>
+                    <div class="header__menu-button button">
+                        <button class="header__menu-btn">
+                            <img class="header__icon" src="assets/img/icons/chat.svg" alt="check status">
+                        </button>
+                    </div>
+                    <div class="header__menu-button button">
+                        <button class="header__menu-btn">
+                            <img class="header__icon" src="assets/img/icons/profile.svg" alt="check status">
+                        </button>
+                    </div>
+                </div>
+                <div class="menu header__menu">
+                    <div class="header__menu-active">
+                        <div class="header__menu-button button">
+                            <button class="header__menu-btn">
+                                <img class="header__icon" src="assets/img/icons/repair.svg" alt="repair">
+                            </button>
+                        </div>
+                        <div class="header__menu-button button">
+                            <button class="header__menu-btn">
+                                <img class="header__icon" src="assets/img/icons/checkstatus.svg" alt="check status">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 <main class="main">
-    <div class="main__title">
-        <h1 class="title__text">
-            Услуги и сервисы
-        </h1>
+    <div class="container">
+        <div class="main__inner">
+            <div class="main__header">
+                <h1 class="main__title">
+                    Услуги и сервисы
+                </h1>
+                <div class="main__button-container button-hidden">
+                    <button class="main__btn button">
+                        Оставить заявку
+                        <span class="icon">
+                            <img src="assets/img/icons/checkstatus.svg" alt="check status">
+                        </span>
+                    </button>
+                    <button class="main__btn button">
+                        Статус ремонта
+                        <span class="icon">
+                            <img src="assets/img/icons/repair.svg" alt="repair">
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <nav class="menu main__menu">
+                <ul class="menu__list main__menu-list">
+                    <li class="menu__item main__menu-item menu__item-active">
+                        <a class="menu__link" href="#">Ремонтируемые устройства</a>
+                    </li>
+                    <li class="menu__item main__menu-item">
+                        <a class="menu__link" href="#">Дополнительные услуги</a>
+                    </li>
+                    <li class="menu__item main__menu-item">
+                        <a class="menu__link" href="#">Цены на услуги</a>
+                    </li>
+                    <li class="menu__item main__menu-item">
+                        <a class="menu__link" href="#">Адреса сервисных центров</a>
+                    </li>
+                    <li class="menu__item main__menu-item">
+                        <a class="menu__link" href="#">Цены на услуги</a>
+                    </li>
+                    <li class="menu__item main__menu-item">
+                        <a class="menu__link" href="#">Специальные цены</a>
+                    </li>
+                    <li class="menu__item main__menu-item">
+                        <a class="menu__link" href="#">Отзывы</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="services">
+                <div class="services-wrapper">
+                    <div class="services__text">
+                        <div class="services__text-left">
+                            <p class="services__text-1">
+                                Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                                Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
+                                производителя.
+                            </p>
+                            <p class="services__text-2">
+                                <br>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                            </p>
+                            <p class="services__text-3">
+                                <br>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что
+                                подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам
+                                обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                            </p>
+                        </div>
+                        <button class="services__button button">
+                            <img src="assets/img/icons/arrow.svg" alt="expand icons" class="services__button-image">
+                            Читать далее
+                        </button>
+                    </div>
+                    <div class="services__logo">
+                        <img src="assets/img/cps.png" alt="cps" class="services__logo-image">
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
-    <nav class="main__nav">
-            <ul class="main__list">
-                <li class="main__item">Ремонтируемые устройства</li>
-                <li class="main__item">Дополнительные услуги</li>
-                <li class="main__item">Цены на услуги</li>
-                <li class="main__item">Адреса сервисных центров</li>
-                <li class="main__item">Цены на услуги</li>
-                <li class="main__item">Специальные цены</li>
-                <li class="main__item">Отзывы</li>
-            </ul>
-    </nav>
-    <section class="main__services">
-        <div class="services__text">
-            <p>
-                Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-                Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-            </p>
-        </div>
-        <div class="services__button">
-            <img src="assets/img/icons/expand.svg" alt="expand icons" class="services__button-image">
-            <button class="services__button-btn">Читать далее</button>
-        </div>
-        <div class="services__logo">
-            <img src="assets/img/cps.png" alt="" class="services__logo-image">
-        </div>
-    </section>
 </main>
-
 </body>
 </html>
